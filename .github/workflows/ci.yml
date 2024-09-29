@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
-      matrix:
+      matrix: # test
         node-version: [14, 16, 18]  
 
     steps:
