@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20]  # Обновлено до Node.js 20
+        node-version: [20]  
 
     steps:
       - name: Checkout repository code
