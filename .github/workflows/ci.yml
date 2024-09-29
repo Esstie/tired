@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
-      matrix: # test
-        node-version: [14, 16, 18]  
+      matrix:
+        node-version: [20]  # Обновлено до Node.js 20
 
     steps:
       - name: Checkout repository code
