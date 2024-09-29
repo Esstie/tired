@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  test: #dsadas
+  test: 
     runs-on: ubuntu-latest
 
     strategy:
