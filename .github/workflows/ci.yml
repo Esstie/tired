@@ -7,9 +7,9 @@ on:
   pull_request:
     branches:
       - main
-
+      #ww
 jobs:
-  test: #edsadasdsa
+  test: 
     runs-on: ubuntu-latest
 
     strategy:
@@ -26,7 +26,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Run ESLint
-        run: npx eslint .
+        run: npx eslint . --ignore-pattern node_modules
 
       - name: Install dependencies
         run: npm install
