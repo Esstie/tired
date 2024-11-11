@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
            
-                git credentialsId: 'tired', url: 'git@github.com:Esstie/tired.git'
+                git credentialsId: 'tired', url: 'https://github.com/Esstie/tired'
             }
         }
         stage('Install Dependencies') {
