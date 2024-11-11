@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'github-dock', url: 'git@github.com:Esstie/tired.git'
+                git branch: 'main', credentialsId: 'github-dock', url: 'git@github.com:Esstie/tired.git'
             }
         }
         stage('Install Dependencies') {
