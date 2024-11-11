@@ -1,17 +1,9 @@
 pipeline {
     agent any
-	 tools {
-        nodejs "nodejs"  // Это имя настроенного инструмента Node.js в Jenkins
-    }
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'github-dock', url: 'git@github.com:Esstie/tired.git'
-            }
-        }
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm install'
+                  git branch: 'main', credentialsId: 'github-dock', url: 'git@github.com:Esstie/tired.git'
             }
         }
         stage('Build') {
