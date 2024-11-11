@@ -1,5 +1,8 @@
 pipeline {
     agent any
+	 tools {
+        nodejs "nodejs"  // Это имя настроенного инструмента Node.js в Jenkins
+    }
     stages {
         stage('Checkout') {
             steps {
